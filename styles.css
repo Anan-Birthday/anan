@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Ensure full page height */
+  text-align: center; /* Center the text */
+  flex-direction: column; /* Stack the elements vertically */
+}
+
+.container {
+  padding: 20px; }
+
+h1 {
+  margin-bottom: 20px;
+}
+
+select {
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#moon-image {
+  width: 300px;
+  height: auto;
+  transition: all 1s ease-in-out; /* Smooth transition */
+  margin-top: 20px; /* Add some space between text and image */
+}
+
+#friend-video {
+  margin-top: 20px;
+  display: auto; /* Hide video initially */
+}
+
+#friend-video.show {
+  display: block; /* Show the video when quality reaches 1080p */
+}

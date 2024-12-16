@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Moon Quality</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Select Quality</h1>
+    <h2>To See The Moon</h2>
+    <select id="quality-select" center>
+      <option value="144">144p</option>
+      <option value="360">360p</option>
+      <option value="720">720p</option>
+      <option value="1080">1080p</option>
+    </select>
+
+    <div class="display">
+      <img id="moon-image" src="moon_144.jpg"  alt="Moon Quality">
+      <video id="friend-video" width="500" muted autoplay controls hidden loop>
+        <source src="1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <audio id="song" src="song.mp3"  loop hidden></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
